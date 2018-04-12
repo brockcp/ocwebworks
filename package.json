@@ -1,0 +1,33 @@
+{
+  "name": "ocwebworks",
+  "version": "2.0.0",
+  "description": "- **EigoPost** is .",
+  "main": "index.js",
+  "scripts": {
+    "scss-to-src": "node-sass --output-style nested --indent-type tab --indent-width 1 -o src/css src/scss",
+    "s": "browser-sync start --server --files 'src/*' --startPath 'src'",
+    "XXXimport-mfizz-fonts": "copyfiles -u 3 node_modules/font-mfizz/dist/font-mfizz.eot  node_modules/font-mfizz/dist/font-mfizz.svg node_modules/font-mfizz/dist/font-mfizz.ttf node_modules/font-mfizz/dist/font-mfizz.woff src/fonts",
+    "XXXimport-fontawesome-fonts": "copyfiles -u 2 node_modules/font-awesome/fonts/* src",
+    "XXXimport-jquery": "copyfiles -u 3 'node_modules/jquery/dist/jquery.min.js' src/js",
+    "XXXpush-html": "copyfiles -u 1 src/index.html docs",
+    "XXXpush-img": "imagemin src/img/* --out-dir docs/img",
+    "XXXpush-css": "node-sass --output-style compressed -o docs/css src/scss",
+    "XXXpush-js": "copyfiles -u 1 src/js/**/*.* docs",
+    "XXXpush-fonts": "copyfiles -u 1 src/fonts/*.* docs",
+    "XXXserve-docs": "browser-sync start --server --files 'docs/*' --startPath 'docs'"
+  },
+  "dependencies": {
+    "aos": "^2.2.0",
+    "bootstrap": "^4.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brockcp/ocwebworks.git"
+  },
+  "author": "brock patterson",
+  "license": "ISC",
+  "homepage": "https://github.com/brockcp/ocwebworks#readme"
+}
