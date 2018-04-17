@@ -10,16 +10,13 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="XXXcss/main.css">
     <style>
-      html, body{height:100%; background:transparent}
-      .main-bg{
-        background: url('img/ocbg.png')no-repeat center center;
-        background-size:cover;
-        height:100%;
-        position:relative;}
+      html, body{height:100%; background:transparent; font-weight: 200}
+      p{margin-bottom:.5rem}
+      .main-bg{background: url('img/ocbg.png')no-repeat center center; background-size:cover; height:100%; position:relative;}
       .XXXgreeting{position:absolute; top:3%; left:3%}
       .XXXgreeting h1{color:white; font-weight:300}
       .orange{position:absolute; top:75%; left:65%; height:10px; width:10px;}
-      .color1-bg{background:#99ee88}
+      .color1-bg{background: #99ee88}
       .color2-bg{background: #72d822}
       .color3-bg{background: #6699cc}
       .color4-bg{background: #ffffff}
@@ -35,8 +32,8 @@
       .font-size30{font-size: 30px;}
       .font-size36{font-size: 36px;}
       .font-size44{font-size: 44px;}
+      .font-weight300{font-weight:300}
       .lineheight8{line-height:.8}
-      p{margin-bottom:.5rem}
       .margin-15{margin: 15px}
       .margin-s15{margin:0 15px}
       .padding-3p{padding:3%;}
@@ -45,38 +42,46 @@
       .alignl{text-align: left;}
       .alignc{text-align: center;}
       .alignr{text-align: right;}
-      #about, #works, #contact {}
       footer{height:200px; background:#997766}
       .no-gutters{margin:0 -15px}
-      .border{border: 1px solid red}
+      div#works img{width:100%; height:auto; margin: 5px 0}
+      .btn-primary{background:#72d822; border:1px solid #72d822; width:130px}
+      .btn-primary:hover{background:#64c619; border:1px solid #64c619}
+
+      [data-aos="dropdown"] {
+        transform: translate3d(0,0,0);
+        opacity: 1;}
+      [data-aos="dropdown"].aos-animate {
+        transform: translate3d(0,120px,0);
+        opacity: 1;}
+
       [data-aos="fadeinup"] {
-        transform: translate3d(0,50px,0);
+        transform: translate3d(0,200px,0);
         opacity: 0;}
       [data-aos="fadeinup"].aos-animate {
         transform: translate3d(0,0,0);
         opacity: 1;}
+
       [data-aos="fadeinleft"] {
         transform: translate3d(-100px,0,0);
         opacity: 0;}
       [data-aos="fadeinleft"].aos-animate {
         transform: translate3d(0,0,0);
         opacity: 1;}
+
       [data-aos="fadeinright"] {
         transform: translate3d(100px,0,0);
         opacity: 0;}
       [data-aos="fadeinright"].aos-animate {
         transform: translate3d(0,0,0);
         opacity: 1;}
-        [data-aos="dropdown"] {
-          transform: translate3d(0,0,0);
-          opacity: 1;}
-        [data-aos="dropdown"].aos-animate {
-          transform: translate3d(0,120px,0);
-          opacity: 1;}
+
+      @media (min-width: 768px)
+          {.padding768-3p{padding: 100px 10%;}}
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar top-nav-collapse" data-aos="fadeinup" data-aos-delay="2000">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar top-nav-collapse" data-aos="fadeinleft" data-aos-delay="500">
       <a class="navbar-brand" href="#">OCwebworks</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -105,45 +110,45 @@
       <img src="img/orange.png" class="orange" data-aos="dropdown" data-aos-delay="1000">
     </div>
     <div class="container-fluid">
-      <div class="row">
-
-        <div class="col-12 color1-bg padding-3p" id="hook">
+      <div class="row"> <!--HOOK + ABOUT-->
+        <div class="col-12 color1-bg padding-3p padding768-3p" id="hook"> <!--#HOOK-->
           <p class="color4-font font-size44 lineheight8" data-aos="fadeinleft" data-aos-delay="100">At <b>OCwebworks</b>,<br> we build websites the good old fashioned way...</p>
           <p class="color5-font font-size30 alignc" data-aos="fadeinup" data-aos-delay="500"><b>By hand!</b></p>
-          <p class="color1-font font-size36 alignr lineheight8" data-aos="fadeinright" data-aos-delay="1000"> And, it won't cost you a <b>hand</b> - an <b>arm</b>, nor a <b>leg</b>. Promise!</p>
+          <p class="color1-font font-size36 alignr lineheight8" data-aos="fadeinright" data-aos-delay="700"> But... it won't cost you a <b>hand</b> - an <b>arm</b>, nor a <b>leg</b>. Promise!</p>
         </div>
-
-        <div class="col-12 color3-bg padding-3p" id="about">
+        <div class="col-12 color3-bg padding-3p padding768-3p" id="about"> <!--#ABOUT-->
           <p class="color6-font font-size36 lineheight8" data-aos="fadeinleft" data-aos-delay="500">So, what is <b>OCwebworks</b>?</p>
-          <p class="color5-font font-size30 lineheight8" data-aos="fadeinup" data-aos-delay="500">We are a small yet <b>big-hearted</b> web design shop in <b>South Orange County</b>, California.</p>
+          <p class="color5-font font-size30 lineheight8" data-aos="fadeinup" data-aos-delay="800">We are a small yet <b>big-hearted</b> web design shop in <b>South Orange County</b>, California.</p>
           <p class="color5-font font-size30 lineheight8 alignr" data-aos="fadeinright" data-aos-delay="1000">San Juan Capistrano, to be exact.</p>
           <br>
           <p class="color1-font font-size36 lineheight8" data-aos="fadeinup" data-aos-delay="500">And here is what we stand for:</p>
-          <p class="color5-font font-size30 lineheight8" data-aos="fadeinright" data-aos-delay="500">*<b>Quality over Quantity!</b> - We would rather build one great site than ten average ones.</p>
-          <p class="color5-font font-size30 lineheight8" data-aos="fadeinright" data-aos-delay="1500">*<b>Function over Fashion!</b> - Function always comes first, then we add the fashion.</p>
-        </div>
-
-        <div class="col-12 bg-color3 alignc padding-3p" id="works">
-          <h2 class="font-color4 font-size44 color5-font">Here is some of our work</h2>
-          <p class="" data-aos="fadeinleft"><img src="img/wordpress.png" style="width:50%; height:auto"></p>
-          <p class="" data-aos="fadeinleft"><img src="img/wojtekk.png" style="width:50%; height:auto"></p>
-          <p class="" data-aos="fadeinleft"><img src="img/tebo.png" style="width:50%; height:auto"></p>
-          <p class="" data-aos="fadeinleft"><img src="img/eigopost.png" style="width:50%; height:auto"></p>
-
-        </div>
-
-        <div class="col-12 color5-bg alignc padding-3p" id="contact">
-          <h2 class="font-color4 font-size30 lineheight8">contact</h2>
-          <p class="font-color4 font-size30 lineheight8" data-aos="fadeinleft">Ready for your new site? Let's do it!</p>
-          <p class="font-color4 font-size30 lineheight8" data-aos="fadeinleft">Still have some questions? We would be happy to answer them.</p>
-          <p class="font-color4 font-size30 lineheight8" data-aos="fadeinleft">Lets do it!</p>
-          <a href="mailto:brock@ocwebworks.com" class="btn btn-primary" data-aos="fadeinright">email</a>
+          <p class="color5-font font-size30 lineheight8" data-aos="fadeinright" data-aos-delay="1000">*<b>Quality over Quantity!</b> - We would rather build one great site than ten average ones.</p>
+          <p class="color5-font font-size30 lineheight8" data-aos="fadeinright" data-aos-delay="1200">*<b>Function over Fashion!</b> - Function always comes first, then we add the fashion.</p>
         </div>
       </div>
-
-      <footer class="no-gutters alignc">copyright 2018
-      </footer>
-    </div>
+      <div class="row" id="works"> <!--#WORKS-->
+        <div class="col-md-6" data-aos="fadeinleft" data-aos-delay="600"><p class="">p infor here p info here</p></div>
+        <div class="col-md-6" data-aos="fadeinup" data-aos-delay="300"><img src="img/wordpress.png"></div>
+        <div class="col-md-6" data-aos="fadeinleft" data-aos-delay="600"><p class="">WOJTEKK infor here p info here</p></div>
+        <div class="col-md-6" data-aos="fadeinup" data-aos-delay="300"><img src="img/wojtekk.png"></div>
+        <div class="col-md-6" data-aos="fadeinleft" data-aos-delay="600"><p class="">TEBO infor here p info here</p></div>
+        <div class="col-md-6" data-aos="fadeinup" data-aos-delay="300"><img src="img/tebo.png"></div>
+        <div class="col-md-6" data-aos="fadeinleft" data-aos-delay="600"><p class="">EIGOPOST infor here p info here</p></div>
+        <div class="col-md-6" data-aos="fadeinup" data-aos-delay="300"><img src="img/eigopost.png"></div>
+      </div>
+      <div class="row"> <!--CONTACT-->
+        <div class="col-12 color5-bg padding-3p padding768-3p" id="contact">
+          <p class="color5-font font-size36 lineheight8" data-aos="fadeinleft">Whether you are ready to get started on your new site </p>
+          <p class="color5-font font-size36 alignc" data-aos="fadeinright">or</p>
+          <p class="color5-font font-size30 lineheight8" data-aos="fadeinleft">just have some questions.</p>
+          <p class="color5-font font-size30 lineheight8" data-aos="fadeinleft">Either way, send us an email and we'll be happy to help in any way we can.</p>
+          <p class="alignc"><a href="mailto:brock@ocwebworks.com" class="btn btn-primary" data-aos="fadeinright">Email Us</a></p>
+        </div>
+      </div>
+    </div><!--CONTAINER-FLUID-->
+    <footer class="no-gutters alignc">
+      <h3 class="font-weight300">OCwebworks 2018</h3>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
