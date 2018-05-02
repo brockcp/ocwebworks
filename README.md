@@ -1,17 +1,18 @@
 # OCwebworks2.0
 
-- **EigoPost** is .
+- **OCwebworks** is my main business portal.
 
 ### Features:
 
-- Users .
+- **CSS3 animations** via the AOS(Animate On Scroll) library. Thank you Michal Sajnog.
+- **Bootstrap 4** navigation
 
 ### Technologies used:
 
-- Built on the **Ruby on Rails** Framework
+- **CSS3**
+- **Bootstrap 4**
+- **jQuery**
+- **NPM scripts**
 
 
-### EigoPost is up and running on Heroku [here](http://eigopost.herokuapp.com)
-
-
-- This site .
+### Ocwebworks is live [here](http://ocwebworks.com).
