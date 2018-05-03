@@ -9,7 +9,7 @@
     "import-jquery": "copyfiles -u 3 'node_modules/jquery/dist/jquery.min.js' src/js",
     "import-bootstrapjs": "copyfiles -u 4 'node_modules/bootstrap/dist/js/bootstrap.bundle.js' src/js",
     "import-aosjs": "copyfiles -u 3 'node_modules/aos/dist/aos.js' src/js",
-    "XXXpush-img": "imagemin src/img/* --out-dir docs/img",
+    "XXXpush-img": "imagemin src/img/* --out-dir docs/img"
   },
   "dependencies": {
     "aos": "^2.2.0",
