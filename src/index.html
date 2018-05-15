@@ -36,6 +36,7 @@
     </div>
     <div class="main-bg" id="bg">
       <img src="img/orange.png" class="orange" data-aos="dropdown" data-aos-delay="1000">
+  <div class="loading">Waiting for "load" event...</div>
     </div>
     <div class="container-fluid" id="intro">
       <div class="row">
@@ -147,6 +148,15 @@
      </footer>
     </div>
 
+    <script>
+    document.body.classList.add('js-loading');
+
+    window.addEventListener("load", showPage, false);
+
+    function showPage() {
+      document.body.classList.remove('js-loading');
+    }
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/aos.js"></script>
