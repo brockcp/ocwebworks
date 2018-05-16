@@ -1,44 +1,78 @@
 html, body {
-	height: 100%;
+	/* height: 100%;
 	background: transparent;
-	font-weight: 200; }
-
-.main-bg {
-	background-image: url("http://www.ocwebworks.com/img/ocbg.png");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	height: 100%;
-	width: auto;
-	position: relative; }
-
-.orange {
-	position: absolute;
-	top: 75%;
-	left: 65%;
-	height: 10px;
-	width: 10px; }
-
+	font-weight: 200; } */
+}
 	.js-loading *,
 	.js-loading *:before,
 	.js-loading *:after {
-	  transform: none !important;
+	  animation-play-state: paused !important;
 	}
 
+.main-bg{
+	background: #000;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	overflow:hidden;
+}
+
+.main-bg:before {
+	background: url("http://www.ocwebworks.com/img/ocbg.png");
+
+	background-size: cover;
+	content: "";
+	opacity: 0;
+	height: 125vh;
+
+	position: absolute;
+left:-10%;
+top:-10%;
+width: 125vw;
+}
+
 	.loading {
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  -webkit-transform: translate(-50%, -50%);
-	          transform: translate(-50%, -50%);
-	  color: #aaa;
-	  font-size: 48px;
-	  display: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+						transform: translate(-50%, -50%);
+		color: #aaa;
+		font-size: 48px;
+		display: none;
 	}
 
 	.js-loading .loading {
-	  display: block;
+		display: block;
 	}
+
+.orange {
+	width: 1200px;
+  height: 800px;
+  position: absolute;
+    /* top: calc(50% - 100px);
+    left: calc(50% - 100px); */
+}
+.orange img {
+    animation: show-on-load 1s .5s cubic-bezier(0,1.6,.6,1) forwards;
+  border-radius: 50%;
+  opacity: 0;
+  width: 100%;
+  box-shadow: 0 0 12em 1em rgba(110, 140, 200, .6);
+}
+@keyframes show-on-load {
+  0% {
+    opacity: 0;
+            transform: scale(.5);
+  }
+  100% {
+    opacity: 1;
+            transform: none;
+  }
+}
+
 
 .color1-bg {
 	background: #ffffff; }
