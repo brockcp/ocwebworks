@@ -5,96 +5,107 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Welcome to OCwebworks</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
     <link rel="shortcut icon" href="apple-touch-icon.png" type="image/png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="icon" href="favicon.png">
 
-    <style>
-    html, body {
-    	/* height: 100%;
-    	background: transparent;
-    	font-weight: 200; } */
-    }
+  <style>
 
-    /* #bootstrap-nav{
-      position: absolute;
-    } */
-    	.js-loading *,
-    	.js-loading *:before,
-    	.js-loading *:after {
-    	  animation-play-state: paused !important;
-    	}
+  .js-loading *,
+  .js-loading *:before,
+  .js-loading *:after {
+    animation-play-state: paused !important;}
 
-    .main-bg{
-    	background: #000;
-    	position:absolute;
-    	top:50px;
-    	right:0;
-    	bottom:0;
-    	left:0;
-    	overflow:hidden;
-    }
+  .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #aaa;
+    font-size: 48px;
+    display: none;}
 
-    .main-bg:before {
-    	/* background: url("http://www.ocwebworks.com/img/ocbg.png"); */
+  .js-loading .loading {
+    display: block;}
 
-    	background-size: cover;
-    	content: "";
-    	opacity: 0;
-    	height: 125vh;
 
-    	position: absolute;
-    left:-10%;
+  .main-bg{
+    background: yellow;
+    position:absolute;
+    top:50px;
+    right:0;
+    bottom:0;
+    left:0;
+    overflow:hidden;}
+
+  .main-bg:before {
+    animation: show-background 60s .5s cubic-bezier(0,1,.5,1) forwards;
+    background: url(https://cssanimation.rocks/images/random/space2.jpg) repeat center;
+    background-size: cover;
+    content: "";
+    opacity: 0;
+     height: 125vh;
+    position: absolute;
+     left:-10%;
     top:-10%;
-    width: 125vw;
-    }
+    width: 125vw;}
 
-    	.loading {
-    		position: absolute;
-    		top: 50%;
-    		left: 50%;
-    		-webkit-transform: translate(-50%, -50%);
-    						transform: translate(-50%, -50%);
-    		color: #aaa;
-    		font-size: 48px;
-    		display: none;
-    	}
+  .orange img {
+    animation: show-on-load 1s .5s cubic-bezier(0,1.6,.6,1) forwards;
+    opacity: 0;
+    width: 200px;
+  height:200px;}
 
-    	.js-loading .loading {
-    		display: block;
-    	}
+  @keyframes show-background {
+    0% {opacity: 0; transform: none;}
+    30% {opacity: .5;}
+    100% {opacity: .5; transform: scale(.8)}}
 
-    .orange {
-    	width: 1200px;
-      height: 800px;
-      position: absolute;
-        /* top: calc(50% - 100px);
-        left: calc(50% - 100px); */
-    }
-    .orange img {
-        animation: show-on-load 1s .5s cubic-bezier(0,1.6,.6,1) forwards;
-      border-radius: 50%;
+  @keyframes show-on-load {
+    0% {
       opacity: 0;
-      width: 100%;
-      box-shadow: 0 0 12em 1em rgba(110, 140, 200, .6);
-    }
-    @keyframes show-on-load {
-      0% {
-        opacity: 0;
-                transform: scale(.5);
-      }
-      100% {
-        opacity: 1;
-                transform: none;
-      }
-    }
-    </style>
+      transform: scale(.5);}
+    100% {
+      opacity: 1;
+      transform: none;}}
+
+/* #intro{
+  position:relative;
+  background:blue;
+  top:530px;
+} */
+/* .moon {
+    animation: spin 30s linear infinite;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+      transform-origin: 200px 200px;
+}
+.moon img {
+    animation: show-on-load 1s .5s cubic-bezier(0,1.6,.6,1) forwards;
+  border-radius: 50%;
+  opacity: 0;
+  width: 100%;
+  box-shadow: 0 0 12em 1em rgba(110, 140, 200, .6);
+}
+.moon img {
+  animation: fade-in 2s 1s cubic-bezier(0,1.5,1,1) forwards, spin 30s linear reverse infinite;
+} */
+
+/* @keyframes spin {
+  to {
+    transform: rotateZ(360deg);
+  }
+} */
+</style>
   </head>
   <body>
-    <div class="container-fluid" id="bootstrap-nav">
+    <!-- <div class="container-fluid" id="bootstrap-nav">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar top-nav-collapse" data-aos="fadeinleft" data-aos-delay="500">
         <a class="navbar-brand" href=""><span class="color7-font font-weight-300">OC</span>webworks</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -114,14 +125,16 @@
           </ul>
         </div>
        </nav>
-    </div>
-    <div class="main-bg" id="bg">
+    </div> -->
 
-  <div class="loading">Waiting for "load" event...</div>
-  <div class="orange">
-    <img src="http://ocwebworks.com/img/ocbg.png" style="width:1000px; height:1000px">
-  </div>
+    <div class="main-bg">
+       <div class="loading">Just a moment...</div>
+
+       <div class="orange">
+         <img src="https://cssanimation.rocks/images/random/moon.png">
+       </div>
     </div>
+
     <!-- <div class="container-fluid" id="intro">
       <div class="row">
         <div class="col-12 color2-bg padding-tb8plr10p padding-lg-tb8plr20p" id="hook">
@@ -242,14 +255,14 @@
       document.body.classList.remove('js-loading');
     }
   </script>-->
-    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/aos.js"></script>
     <script>
       AOS.init({
         //easing: 'ease-out-back'
       });
-    </script>
+    </script> -->
     <!-- <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -262,11 +275,10 @@
     </script> -->
     <script>
     document.body.classList.add('js-loading');
-
     window.addEventListener("load", showPage, false);
-
     function showPage() {
       document.body.classList.remove('js-loading');
-    }</script>
+    }
+  </script>
  </body>
 </html>
