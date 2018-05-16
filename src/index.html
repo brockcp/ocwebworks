@@ -31,7 +31,6 @@
   .js-loading .loading {
     display: block;}
 
-
   .main-bg{
     background: yellow;
     position:absolute;
@@ -48,7 +47,7 @@
     content: "";
     opacity: 0;
      height: 125vh;
-    position: absolute;
+    /* position: absolute; */
      left:-10%;
     top:-10%;
     width: 125vw;}
@@ -57,7 +56,7 @@
     animation: show-on-load 1s .5s cubic-bezier(0,1.6,.6,1) forwards;
     opacity: 0;
     width: 200px;
-  height:200px;}
+    height:200px;}
 
   @keyframes show-background {
     0% {opacity: 0; transform: none;}
@@ -65,43 +64,9 @@
     100% {opacity: .5; transform: scale(.8)}}
 
   @keyframes show-on-load {
-    0% {
-      opacity: 0;
-      transform: scale(.5);}
-    100% {
-      opacity: 1;
-      transform: none;}}
+    0% {opacity: 0; transform: scale(.5);}
+    100% {opacity: 1; transform: none;}}
 
-/* #intro{
-  position:relative;
-  background:blue;
-  top:530px;
-} */
-/* .moon {
-    animation: spin 30s linear infinite;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-    top: calc(50% - 200px);
-    left: calc(50% - 200px);
-      transform-origin: 200px 200px;
-}
-.moon img {
-    animation: show-on-load 1s .5s cubic-bezier(0,1.6,.6,1) forwards;
-  border-radius: 50%;
-  opacity: 0;
-  width: 100%;
-  box-shadow: 0 0 12em 1em rgba(110, 140, 200, .6);
-}
-.moon img {
-  animation: fade-in 2s 1s cubic-bezier(0,1.5,1,1) forwards, spin 30s linear reverse infinite;
-} */
-
-/* @keyframes spin {
-  to {
-    transform: rotateZ(360deg);
-  }
-} */
 </style>
   </head>
   <body>
