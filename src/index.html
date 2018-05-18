@@ -100,7 +100,7 @@
        </div>
     </div>
 
-    <!-- <div class="container-fluid" id="intro">
+    <div class="container-fluid" id="intro">
       <div class="row">
         <div class="col-12 color2-bg padding-tb8plr10p padding-lg-tb8plr20p" id="hook">
           <p class="color4-font font-size50 lineheight8">At <b>OCwebworks</b>,<br> we build websites the good old fashioned way...</p>
@@ -122,9 +122,9 @@
           <p class="color1-font font-size30 lineheight8" data-aos="fadeinright" data-aos-delay="900">To see this in action, adjust your browser and see how this site flexes and flows.</p>
         </div>
       </div>
-    </div> -->
+    </div>
 
-    <!-- <div class="container-fluid color5-bg padding-t4pb5p" id="works">
+    <div class="container-fluid color5-bg padding-t4pb5p" id="works">
       <p class="font-size36 padding-4p text-center">Our Work</p>
       <hr>
       <div class="row padding-lg-lr10p" id="works-wordpress">
@@ -139,7 +139,7 @@
           </p>
         </div>
         <div class="col-md-6 text-center" data-aos="fadeinup" data-aos-delay="500">
-          <a href="http://ocwebworks.com/works/wordpress/" target="_blank" class=""><img src="img/wordpress.png"></a>
+          <a href="http://ocwebworks.com/works/wordpress/" target="_blank" class=""><img src="http://ocwebworks.com/img/wordpress.png"></a>
         </div>
       </div>
       <hr>
@@ -155,7 +155,7 @@
             </p>
         </div>
         <div class="col-md-6 text-center" data-aos="fadeinup" data-aos-delay="500">
-          <a href="http://www.wojtekkfineart.com" target="_blank" class=""><img src="img/wojtekk.png"></a>
+          <a href="http://www.wojtekkfineart.com" target="_blank" class=""><img src="http://ocwebworks.com/img/wojtekk.png"></a>
         </div>
       </div>
       <hr>
@@ -171,7 +171,7 @@
           </p>
         </div>
         <div class="col-md-6 text-center" data-aos="fadeinup" data-aos-delay="500">
-          <a href="http://www.teboconsulting.com" target="_blank" class=""><img src="img/tebo.png"></a>
+          <a href="http://www.teboconsulting.com" target="_blank" class=""><img src="http://ocwebworks.com/img/tebo.png"></a>
         </div>
       </div>
       <hr>
@@ -186,12 +186,12 @@
           </p>
         </div>
         <div class="col-md-6 text-center" data-aos="fadeinup" data-aos-delay="500">
-          <a href="http://eigopost.herokuapp.com" target="_blank" class=""><img src="img/eigopost.png"></a>
+          <a href="http://eigopost.herokuapp.com" target="_blank" class=""><img src="http://ocwebworks.com/img/eigopost.png"></a>
         </div>
       </div>
-    </div> -->
+    </div>
 
-    <!-- <div class="container-fluid" id="contact">
+    <div class="container-fluid" id="contact">
       <div class="row">
         <div class="col-12 color6-bg padding-tb8plr10p padding-lg-tb8plr20p">
           <p class="color4-font font-size40 lineheight8">So, whether you are thinking of starting a <b>new site</b>, or</p>
@@ -202,13 +202,12 @@
           </div>
         </div>
       </div>
-    </div> -->
-
-    <!-- <div class="container-fluid">
+    </div>
+     <div class="container-fluid">
       <footer class="text-center no-gutters color11-bg" style="background:#666600">
        <h3 class="color1-font font-weight-300">OCwebworks 2018</h3>
      </footer>
-    </div> -->
+    </div>
 
 
 
@@ -239,9 +238,10 @@
 
     </script> -->
     <script>
+    var img = document.querySelector(".main-bg img");
     document.body.classList.add('js-loading');
-    window.addEventListener("load", showPage, false);
-    function showPage() {
+    img.addEventListener("load", removeLoadingClass);
+    function removeLoadingClass() {
       document.body.classList.remove('js-loading');
     }
   </script>
