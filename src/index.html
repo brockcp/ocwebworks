@@ -33,7 +33,7 @@
        </nav>
     </div>
     <div class="img-col" style="background-color: #c7f1a7">
-      <div class="image" src="http://ocwebworks.com/img/ocbg.png"></div>
+      <div class="image" data-src="http://ocwebworks.com/img/ocbg.png"></div>
     </div>
     <div class="container-fluid" id="intro">
       <div class="row">
@@ -150,14 +150,14 @@
       });
     </script>
     <script>
-      $('.img-col').each(function () {// Iterate through all image wrappers
-        var $wrapper = $(this); // Get the wrapper
-        var $img = $wrapper.find('.image'); //and image elements
-        var tempImg = new Image();// Create temp image
-        tempImg.src = $img.data('src'); //and set the src
-        tempImg.onload = function () {// Callback when the image is loaded
-          $img.css('background-image', 'url(' + tempImg.src + ')');//Set image as bg
-          $wrapper.addClass('loaded');// Add .loaded to wrapper
+      $('.img-col').each(function () {
+        var $wrapper = $(this);
+        var $img = $wrapper.find('.image');
+        var tempImg = new Image();
+        tempImg.src = $img.data('src');
+        tempImg.onload = function () {
+          $img.css('background-image', 'url(' + tempImg.src + ')');
+          $wrapper.addClass('loaded');
         };
       });
     </script>
