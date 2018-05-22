@@ -6,17 +6,22 @@
   "scripts": {
     "sass": "node-sass --output-style nested --indent-type tab --indent-width 1 -o src/css src/scss",
     "sass-prod": "node-sass --output-style compressed -o src/css src/scss",
+    "css-concat": "concat -o src/css/master.css src/css/aos.css src/css/bootstrap.css src/css/main.css",
+    "uglifyjs": "uglifyjs src/js/jquery.min.js src/js/bootstrap.bundle.min.js src/js/aos.js -m -o src/js/app.js",
     "s": "browser-sync start --server --files 'src/*' --startPath 'src'",
     "import-jquery": "copyfiles -u 3 'node_modules/jquery/dist/jquery.min.js' src/js",
     "import-bootstrapjs": "copyfiles -u 4 'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js' src/js",
     "import-aosjs": "copyfiles -u 3 'node_modules/aos/dist/aos.js' src/js",
-    "XXXpush-img": "imagemin src/img/* --out-dir docs/img"
+    "XXXpush-img": "imagemin src/img/* --out-dir docs/img",
+    "NOTES": "UGLIFY WORKED BUT CONCAT DIDNT FOR JS"
   },
   "dependencies": {
     "aos": "^2.2.0",
     "bootstrap": "^4.1.0",
+    "concat": "^1.0.3",
     "copyfiles": "^2.0.0",
-    "popper.js": "^1.14.3"
+    "popper.js": "^1.14.3",
+    "uglify-js": "^3.3.26"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
