@@ -20,6 +20,7 @@ html, body{height:100%; background:transparent; font-weight: 200}
 .color11-bg{background: #72d822}
 .color12-bg{background: #d7ee88}
 .color13-bg{background: #99ee88}
+.color14-bg{background: #444444}
 .color1-font{color:#ffffff}
 .color2-font{color:#cccccc}
 .color3-font{color:#777777}
@@ -27,6 +28,7 @@ html, body{height:100%; background:transparent; font-weight: 200}
 .color5-font{color:#444444}
 .color6-font{color:#333333}
 .color7-font{color:#ff9900}
+.color8-font{color:#555555}
 hr{width: 95%;border: 0;height: 1px; background-image: linear-gradient(90deg, #ffffff, #333333, #ffffff)}
 .font-size18{font-size: 18px;}
 .font-size22{font-size: 22px;}
@@ -56,18 +58,19 @@ div#works img{width:90%; height:auto; margin: 5px 0}
 .btn-primary{padding:5px 20px; color:#ffffff; background:#339922; border-radius:4px}
 .btn-primary:hover{color:#ffffff; background:#338822; text-decoration: none}
 
+
+[data-aos="fadeinup"] {
+  transform: translate3d(0,30px,0);
+  opacity: 0;}
+[data-aos="fadeinup"].aos-animate {
+  transform: translate3d(0,0,0);
+  opacity: 1;}
+
 [data-aos="dropdown"] {
   transform: translate3d(0,0,0);
   opacity: 0;}
 [data-aos="dropdown"].aos-animate {
   transform: translate3d(0,120px,0);
-  opacity: 1;}
-
-[data-aos="fadeinup"] {
-  transform: translate3d(0,100px,0);
-  opacity: 0;}
-[data-aos="fadeinup"].aos-animate {
-  transform: translate3d(0,0,0);
   opacity: 1;}
 
 [data-aos="fadeinleft"] {

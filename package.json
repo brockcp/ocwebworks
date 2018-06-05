@@ -10,7 +10,7 @@
     "import-js-all": "npm-run-all import-jquery import-bootstrapjs import-aosjs",
     "sass-css": "node-sass --output-style compressed -o src/css src/scss",
     "dev-s": "browser-sync start --server --files 'src/*' --startPath 'src'",
-    "prod-css": "useref src/index.html dist/index.html --css concat",
+    "prod-html-css": "useref src/index.html dist/index.html --css concat",
     "prod-js-bad": "useref src/index.html dist/index.html --js uglify",
     "prod-js-good": "uglifyjs src/js/jquery.min.js src/js/bootstrap.bundle.min.js src/js/aos.js -m -o dist/js/main.js",
     "prod-img": "copyfiles -u 1 'src/img/*' dist",
