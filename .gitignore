@@ -1,5 +1,3 @@
 .DS_Store
 node_modules
-STORAGE/
 package-lock.json
-README-bp.txt
