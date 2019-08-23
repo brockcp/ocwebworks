@@ -13,6 +13,7 @@
 - **Bootstrap 4**
 - **jQuery**
 - **NPM scripts**
+- **Browser-Sync**
 
 
 ### Ocwebworks is live [here](http://ocwebworks.com).
