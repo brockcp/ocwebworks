@@ -7,8 +7,14 @@ const Main = () => {
     <div className="main">
       <img src={bg}
            className="bg fadein"
+           alt="main background"
       />
-      <div className=''>Hello There. My name is Brock and I build websites in Southern Orange County, San Juan Capistrano to be specific.
+      <div className='callout'>
+        <h1>
+          OCwebworks provides website creation, renovation and
+          web consulting to businesses in Southern Orange County.
+          San Juan Capistrano to be exact.
+        </h1>
       </div>
     </div>
   )
