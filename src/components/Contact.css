@@ -1,4 +1,20 @@
 .contact{
-  height:400px;
-  background: #c7f1a7
+  background: #c7f1a7;
+  padding: 50px 100px;
+}
+.contact .Sans{
+  font-family: 'Open Sans', sans-serif;
+  color:#444444;
+  font-size:2em;
+  font-weight:500;
+}
+.contact .Lato{
+  font-family: 'Lato', sans-serif;
+  color:#444444;
+  font-weight:500;
+}
+.contact .Inter{
+  font-family: 'Inter', sans-serif;
+  color:#444444;
+  font-weight:500;
 }

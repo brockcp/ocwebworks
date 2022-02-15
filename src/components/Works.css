@@ -1,4 +1,8 @@
 .works{
-  height:300px;
-  background:#d7ee88;
+  background:#ffffff;
+}
+.work{
+  width:30px;
+  height:200px;
+  background:1px solid red;
 }

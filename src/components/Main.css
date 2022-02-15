@@ -1,18 +1,47 @@
-.main{
-  min-height:500px;
-  background: #72d822;
-}
 .bg{
-  width:100%;
-  height:auto;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-.callout h1{
-  padding:50px;
+@media(min-width:576px){
+  .bg{
+    height:80vh;
+  }
 }
+@media(min-width:768px){
+  .bg{
+    height:85vh;
+  }
+}
+.callout{
+  background: linear-gradient(#72d822,#acf078);
+  padding: 10px 0;
+}
+.callout h1, .callout h3{
+  padding: 0 20px 20px;
+  margin:0;
+  color:#444444;
+  font-size:1.2em;
+  line-height:1;
+  font-weight:500;
+  text-align: center;
+}
+@media (min-width:768px){
+  .callout h1, .callout h3{
+    font-size: 1.5em;
+  }
+}
+@media (min-width:992px){
+  .callout h1, .callout h3{
+    padding: 0 100px 20px;
+  }
+}
+
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
 .fadein{
-  animation: fadeIn .5s linear forwards !important;
+  animation: fadeIn .2s linear forwards !important;
 }
