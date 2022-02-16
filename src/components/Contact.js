@@ -5,7 +5,7 @@ const Contact = () => {
   return(
     <div className='contact'>
        <h1 className='Sans'>
-         SANS Whether you are looking for a brand
+         B-H Whether you are looking for a brand
          spanking new site or just have a few
          questions on which way to go, feel
          free to send us an email. We love to

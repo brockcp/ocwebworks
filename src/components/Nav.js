@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-scroll";
 import './Nav.css';
-import logo from '../logo3.png';
+import logo from '../logo.png';
 
 const Nav = () => {
   return (

@@ -1,8 +1,10 @@
 .works{
-  background:#ffffff;
+  background:#bcf095;
 }
 .work{
-  width:30px;
-  height:200px;
-  background:1px solid red;
+  width:500px;
+  height:500px;
+}
+.work img{
+  width: 500px;
 }

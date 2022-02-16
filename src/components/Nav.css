@@ -1,9 +1,7 @@
 .nav {
   font-family: 'Inter', sans-serif;
   background: #A2E9FE;
-  color:#ffffff;
   top: 0px;
-  width: 100%;
   height: 60px;
   z-index: 10;
 }
@@ -14,16 +12,24 @@
 }
 @media(min-width:768px){
   .nav{
-    padding: 10px 40px 0;
+    /* margin-right:300px; */
+    /* padding: 10px 50px 0 50px; */
   }
 }
 .brand{
   display:inline-block;
   width:40%;
-  padding-top:5px;
-  padding-left:5px;
+  padding-top:7px;
+  padding-left:7px;
+  color:#333333;
   text-decoration: none;
   white-space: nowrap;
+}
+@media(min-width:768px){
+  .brand{
+    padding-top:10px;
+    padding-left:40px;
+  }
 }
 .brand-logo{
   display:inline-block;
@@ -38,18 +44,19 @@
   font-size:1.2em;
 }
 .nav-content {
-  width: 55%;
+  width: 50%;
   padding-top: 20px;
+  padding-left: 7px;
   display: inline-block;
   vertical-align: top;
-  height: 100%;
 }
 @media(min-width:768px){
   .nav-content{
+    width:50%
   }
 }
 ul.nav-items{
-  padding: 0;
+  padding:0px;
   margin:0;
   display:flex;
   justify-content: flex-end;
@@ -62,17 +69,38 @@ ul.nav-items{
 .nav-item {
   display: inline;
   margin-left:10px;
-  font-size:0.8em;
+  font-size:1em;
+  color: #777777;
 }
-@media(min-width768px){
+@media(min-width:768px){
   .nav-item{
     margin-left:30px;
     font-size: 1em;
   }
 }
 .nav-item:hover {
-  text-decoration: underline;
   cursor: pointer;
 }
 .nav-item .active{
+}
+
+/* UNDERLINE ANIMATION */
+a.fancy-underline, .fancy-underline{
+  position: relative;
+}
+a.fancy-underline:before, .fancy-underline:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:orange;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+a.fancy-underline:hover:before, .fancy-underline:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
 }

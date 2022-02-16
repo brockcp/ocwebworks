@@ -18,7 +18,7 @@
   background: linear-gradient(#72d822,#acf078);
   padding: 10px 0;
 }
-.callout h1, .callout h3{
+.callout h1, .callout p{
   padding: 0 20px 20px;
   margin:0;
   color:#444444;
@@ -28,15 +28,18 @@
   text-align: center;
 }
 @media (min-width:768px){
-  .callout h1, .callout h3{
+  .callout h1{
     font-size: 1.5em;
   }
 }
 @media (min-width:992px){
-  .callout h1, .callout h3{
+  .callout h1{
     padding: 0 100px 20px;
   }
 }
+
+
+.one{font-weight:600;}
 
 @keyframes fadeIn {
   0% {opacity: 0;}
