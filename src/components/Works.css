@@ -8,6 +8,11 @@
   font-size: 1.2em;
   font-weight: 200;
 }
+@media(min-width:768px){
+  .works h1{
+    font-size: 2em;
+  }
+}
 .work{
   display:flex;
   flex-direction: column;
@@ -29,7 +34,6 @@
 .work img{
   width: 90%;
   margin:0 auto;
-  border:1px solid red;
 }
 @media(min-width:768px){
   .work img{
@@ -49,7 +53,7 @@
 }
 @media(min-width:768px){
   .work-info h1{
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
 }
 .work-info ul{
@@ -61,6 +65,12 @@
     width: 30%
   }
 }
-.work-info li{
+.work-info ul li{
+  font-size: 1.2em;
   list-style-type: circle;
+}
+@media(min-width:768px){
+  .work-info ul li{
+    font-size: 1.5em;
+  }
 }

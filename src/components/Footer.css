@@ -1,5 +1,13 @@
 .footer{
-  height:300px;
-  background:brown;
+  height:200px;
+  background:#303134;
+}
+.footer-copyright{
+  text-align:center;
 
+}
+.footer-copyright p{
+  margin:0;
+  padding-top:40px;
+  color: #ffffff;
 }

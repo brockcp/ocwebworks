@@ -28,12 +28,13 @@
   text-align: center;
 }
 @media (min-width:768px){
-  .callout h1{
+  .callout h1, .callout p{
     font-size: 1.5em;
   }
 }
 @media (min-width:992px){
-  .callout h1{
+  .callout h1, .callout p{
+    font-size: 1.7em;
     padding: 0 100px 20px;
   }
 }

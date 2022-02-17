@@ -1,22 +1,37 @@
 .contact{
   background: #c7f1a7;
-  padding: 50px 100px;
+  padding-bottom:30px;
 }
-.contact .Sans{
-  /*font-family: 'Open Sans', sans-serif;*/
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-font-weight: 300;
+.contact h1{
+  margin:0;
+  padding:50px;
   color:#444444;
-  font-size:3em;
-  font-weight:300;
+  font-size:1.2em;
+  line-height: 1;
+  font-weight: 500;
 }
-.contact .Lato{
-  font-family: 'Lato', sans-serif;
-  color:#444444;
-  font-weight:500;
+@media(min-width:768px){
+  .contact h1{
+    padding:100px 100px;
+    font-size:1.5em;
+  }
 }
-.contact .Inter{
-  font-family: 'Inter', sans-serif;
-  color:#444444;
-  font-weight:500;
+/* .contact-button{
+  text-align: center;
+} */
+.contact button{
+  display:block;
+  width:200px;
+  height:60px;
+  margin:0 auto;
+  background:#E79658;
+  border:1px solid #ffffff;
+  border-radius:8px;
+  font-size: 1.5em;
+  color:#ffffff;
+}
+.contact button:hover{
+  background:#f0a66e;
+  border-color: transparent;
+
 }
