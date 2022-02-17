@@ -18,7 +18,6 @@ const Works = () => {
             <li>Initial Setups</li>
             <li>Configurations</li>
             <li>Fully Customizable Themes</li>
-            <li></li>
           </ul>
         </div>
       </div>
