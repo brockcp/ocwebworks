@@ -1,10 +1,40 @@
 .works{
   background:#bcf095;
 }
+.works h1{
+  margin:0;
+  padding:30px;
+  text-align: center;
+}
 .work{
-  width:500px;
-  height:500px;
+  width:90%;
+  margin: 0 auto;
+  padding-top: 50px;
+  /* height:500px; */
+  display:flex;
+  justify-content: center;
+  border:1px solid green;
+}
+.work-reverse{
+  flex-direction: row-reverse;
 }
 .work img{
-  width: 500px;
+  width: 60%;
+}
+.work-info{
+  width:40%;
+  margin-left:20px;
+  padding:2%;
+  border:1px solid coral;
+}
+.work-info ul{
+
+}
+.work-info li{
+  list-style-type: none;
+}
+.work-info h1{
+  font-size: 1.2em;
+  color:#333333;
+  text-align: center;
 }

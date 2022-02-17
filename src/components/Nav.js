@@ -5,46 +5,48 @@ import logo from '../logo.png';
 
 const Nav = () => {
   return (
-    <nav className="nav"
-         id="navbar">
-       <a className='brand'>
-         <img
-           src={logo}
-           className="brand-logo"
-           href="#"
-           alt="Logo"
-         />
-         <span>webworks</span>
-       </a>
-       <div className="nav-content">
-          <ul className="nav-items">
-            <li className="nav-item fancy-underline">
-              <Link
-                activeClass="active"
-                to="works"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Works
-              </Link>
-            </li>
-            <li className="nav-item fancy-underline">
-              <Link
-                activeClass="active"
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-       </div>
-    </nav>
+    <div className='container-fluid nav'>
+      <nav className="navbar"
+           id="navbar">
+         <a className='brand'
+            href='href="https://ocwebworks.com'>
+           <img
+             src={logo}
+             className="brand-logo"
+             alt="Logo"
+           />
+           <span>webworks</span>
+         </a>
+         <div className="nav-content">
+            <ul className="nav-items">
+              <li className="nav-item fancy-underline">
+                <Link
+                  activeClass="active"
+                  to="works"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  Works
+                </Link>
+              </li>
+              <li className="nav-item fancy-underline">
+                <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={1000}
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+         </div>
+      </nav>
+    </div>
   );
 }
 export default Nav;
