@@ -5,11 +5,11 @@ const Contact = () => {
   return(
     <div className='contact'>
        <h1 className=''>
-         Whether you are looking for a brand
-         spanking new site or just have a few
+         So whether you are looking for a
+         brand new site or just have a few
          questions on which way to go, feel
-         free to send us an email. We love to
-         help in any way we can.
+         free to send me an email and I'll be
+         happy to help in any way I can.
        </h1>
        <div className='contact-button'>
          <a className=''

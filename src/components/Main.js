@@ -12,18 +12,19 @@ const Main = () => {
       </div>
       <div className='callout'>
         <h1>
-          <span className='one'>OCwebworks</span> provides website creation,
-          renovation and web consulting in South Orange
+          <strong>OCwebworks</strong> provides website
+          <strong> creation</strong>,
+          <strong> renovation</strong> and
+          <strong> consulting</strong> in South Orange
           County, CA.
         </h1>
         <p>
-          It's a small operation here, just me, a guy named Brock. But, Ive got
+          It's a small operation here, just me, a guy named Brock.
+          But, I've got
           12 years experience building web applications and an
-          ethical compass that always points toward client satisfaction.
-          </p>
-          <p>So, if you are in need of a website, some new paint or tires for
-          your current one, or just have a few questions, send me an email and I'll
-          be happy to help in any way I can.
+          ethical compass that always points toward
+          <strong> absolute </strong>
+          client satisfaction.
         </p>
         <p>
           Below are some examples of what I do.

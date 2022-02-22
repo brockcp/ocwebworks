@@ -15,9 +15,15 @@ const Works = () => {
         <div className='work-info'>
           <h1 className=''>Wordpress Sites</h1>
           <ul className=''>
-            <li>Initial Setups</li>
-            <li>Configurations</li>
             <li>Fully Customizable Themes</li>
+            <li>Fully Responsive</li>
+            <li><a href="https://ocwebworks.com/works/wordpress/"
+                   target="_blank"
+                   rel="noreferrer"
+                   className="fancy-underline">
+                  view site
+                </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -27,7 +33,14 @@ const Works = () => {
         <div className='work-info'>
           <h1 className=''>Business Sites</h1>
           <ul className=''>
-            <li></li>
+            <li>Fully Responsive</li>
+            <li><a href="https://ocwebworks.com/works/teboconsulting/"
+                   target="_blank"
+                   rel="noreferrer"
+                   className="fancy-underline">
+                  view site
+                </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -37,7 +50,14 @@ const Works = () => {
         <div className='work-info'>
           <h1 className=''>Personal Sites</h1>
           <ul className=''>
-            <li></li>
+            <li>Fully Responsive</li>
+            <li><a href="https://wojtekkfineart.com"
+                   target="_blank"
+                   rel="noreferrer"
+                   className="fancy-underline">
+                  view site
+                </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -47,12 +67,12 @@ const Works = () => {
         <div className='work-info'>
           <h1 className=''>Forums & User Sites</h1>
           <ul className=''>
-            <li></li>
-            <li><a href="http://www.ocwebworks.com"
+            <li>Fully Responsive</li>
+            <li><a href="https://www.eigopost.com"
                    target="_blank"
                    rel="noreferrer"
                    className="fancy-underline">
-                  OCwebworks
+                  view site
                 </a>
             </li>
           </ul>

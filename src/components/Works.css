@@ -5,13 +5,7 @@
   margin:0;
   padding:30px;
   text-align: center;
-  font-size: 1.2em;
   font-weight: 200;
-}
-@media(min-width:768px){
-  .works h1{
-    font-size: 2em;
-  }
 }
 .work{
   display:flex;
@@ -60,13 +54,11 @@
 
 .work-info h1{
   padding:10px;
-  font-size: 1.2em;
   color:#333333;
   text-align: center;
 }
 @media(min-width:768px){
   .work-info h1{
-    font-size: 1.7em;
   }
 }
 .work-info ul{
@@ -79,13 +71,7 @@
   }
 }
 .work-info ul li{
-  font-size: 1.2em;
   list-style-type: circle;
-}
-@media(min-width:768px){
-  .work-info ul li{
-    font-size: 1.5em;
-  }
 }
 .work-info ul li a{
   color: #333333;

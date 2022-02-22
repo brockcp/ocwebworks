@@ -17,3 +17,20 @@ html, body{
     padding-left:10rem;
   }
 }
+/* FONT SIZING */
+h1, p{
+  font-size: 1.3em;
+}
+a, li{
+  font-size: 1.1em;
+}
+@media(min-width:768px){
+  h1, p{
+    font-size:1.5em;
+  }
+}
+@media (min-width:992px){
+  h1, p{
+    font-size: 1.7em;
+  }
+}
