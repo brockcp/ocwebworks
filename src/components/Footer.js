@@ -5,9 +5,9 @@ const Footer = () => {
   return(
     <div className='footer'>
       <div className="footer-copyright">
-        <p className="">© 2022
+        <p className="">©2022 &nbsp;
           <strong>
-              EigoPost.com
+              OCwebworks.com
           </strong>
         </p>
       </div>

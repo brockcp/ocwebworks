@@ -16,22 +16,22 @@
     font-size:1.5em;
   }
 }
-/* .contact-button{
-  text-align: center;
-} */
-.contact button{
+.contact a{
   display:block;
-  width:200px;
-  height:60px;
+  width:100px;
+  text-align: center;
+  padding: 10px 60px;
   margin:0 auto;
   background:#E79658;
-  border:1px solid #ffffff;
+  border:1px solid #999999;
   border-radius:8px;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  font-weight: 500;
   color:#ffffff;
+  text-decoration:none;
 }
-.contact button:hover{
-  background:#f0a66e;
+.contact a:hover{
+  background:#e6a16c;
   border-color: transparent;
 
 }

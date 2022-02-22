@@ -35,12 +35,25 @@
   width: 90%;
   margin:0 auto;
 }
+/* @media(min-width:576px){
+  .work img{
+    width: 40%;
+  }
+} */
 @media(min-width:768px){
   .work img{
-    width: 70%;
+    width: 60%;
   }
   .work-info{
-    width:30%;
+    width:40%;
+  }
+}
+@media(min-width:992px){
+  .work img{
+    width: 50%;
+  }
+  .work-info{
+    width:50%;
   }
 }
 
@@ -73,4 +86,10 @@
   .work-info ul li{
     font-size: 1.5em;
   }
+}
+.work-info ul li a{
+  color: #333333;
+  text-decoration: none;
+}
+.work-info ul li a:hover{
 }

@@ -12,7 +12,11 @@ const Contact = () => {
          help in any way we can.
        </h1>
        <div className='contact-button'>
-         <button className=''>contact</button>
+         <a className=''
+                 href="mailto:info@ocwebworks.com"
+         >
+          contact
+         </a>
        </div>
     </div>
   )
