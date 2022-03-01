@@ -1,17 +1,21 @@
 import React from 'react';
+import ImgHook from '../helpers/ImgHook';
 import './Works.css';
-import img1 from '../works-wp.png';
-import img2 from '../works-tebo.png';
-import img3 from '../works-wojtek.png';
-import img4 from '../works-ep.png';
+import img1 from '../w-wp.png';
+import img2 from '../w-t.png';
+import img3 from '../w-w.png';
+import img4 from '../w-ep.png';
 
 const Works = () => {
   return(
     <div className="works">
       <h1>Works</h1>
       <div className="work">
-        <img src={img1}
-             alt='image1'/>
+        <div className='imgHook-container'>
+          <ImgHook pic={img1}
+                   alt='fubar'
+          />
+        </div>
         <div className='work-info'>
           <h1 className=''>Wordpress Sites</h1>
           <ul className=''>
@@ -28,8 +32,11 @@ const Works = () => {
         </div>
       </div>
       <div className="work work-reverse">
-        <img src={img2}
-             alt='image1'/>
+      <div className='imgHook-container'>
+        <ImgHook pic={img2}
+                 alt='fubar'
+        />
+      </div>
         <div className='work-info'>
           <h1 className=''>Business Sites</h1>
           <ul className=''>
@@ -45,8 +52,11 @@ const Works = () => {
         </div>
       </div>
       <div className="work">
-        <img src={img3}
-             alt='image1'/>
+      <div className='imgHook-container'>
+        <ImgHook pic={img3}
+                 alt='fubar'
+        />
+      </div>
         <div className='work-info'>
           <h1 className=''>Personal Sites</h1>
           <ul className=''>
@@ -62,8 +72,11 @@ const Works = () => {
         </div>
       </div>
       <div className="work work-reverse">
-        <img src={img4}
-             alt='image1'/>
+      <div className='imgHook-container'>
+        <ImgHook pic={img4}
+                 alt='fubar'
+        />
+      </div>
         <div className='work-info'>
           <h1 className=''>Forums & User Sites</h1>
           <ul className=''>

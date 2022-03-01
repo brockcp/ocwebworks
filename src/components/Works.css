@@ -25,17 +25,12 @@
     flex-direction: row-reverse;
   }
 }
-.work img{
+.work img, .imgHook-container{
   width: 90%;
   margin:0 auto;
 }
-/* @media(min-width:576px){
-  .work img{
-    width: 40%;
-  }
-} */
 @media(min-width:768px){
-  .work img{
+  .work img, .imgHook-container{
     width: 60%;
   }
   .work-info{
@@ -43,15 +38,16 @@
   }
 }
 @media(min-width:992px){
-  .work img{
+  .work{
+    width:86%;
+  }
+  .work img, .imgHook-container{
     width: 50%;
   }
   .work-info{
     width:50%;
   }
 }
-
-
 .work-info h1{
   padding:10px;
   color:#333333;
