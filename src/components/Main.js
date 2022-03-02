@@ -1,5 +1,5 @@
 import React from 'react';
-import imageUrl from '../ocbg.png';
+import imageUrl from '../images/ocbg.png';
 import './Main.css';
 
 const Main = () => {

@@ -25,14 +25,11 @@
     flex-direction: row-reverse;
   }
 }
-.work img, .imgHook-container{
+.work .imgHook-container{
   width: 90%;
   margin:0 auto;
 }
 @media(min-width:768px){
-  .work img, .imgHook-container{
-    width: 60%;
-  }
   .work-info{
     width:40%;
   }
@@ -41,9 +38,7 @@
   .work{
     width:86%;
   }
-  .work img, .imgHook-container{
-    width: 50%;
-  }
+
   .work-info{
     width:50%;
   }

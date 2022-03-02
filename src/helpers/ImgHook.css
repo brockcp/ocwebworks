@@ -1,6 +1,6 @@
 .img-container{
   position: relative;
-  padding-bottom:70%; /*56.25% hack for aspect ratio 9:16*/
+  padding-bottom:65%; /*56.25% hack for aspect ratio 16:9*/
   height:auto;
 }
 .img-container img{
