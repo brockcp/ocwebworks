@@ -1,30 +1,23 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import './ImgHook.css';
 
 function ImgHook({pic, alt}) {
-  const [loading, setLoading] = useState(true);
-  const [currentSrc, updateSrc] = useState(null);
-  useEffect(() => {
-    const imageToLoad = new Image();
-    imageToLoad.src = pic;
-    imageToLoad.onload = () => {
-      setLoading(false);
-      updateSrc(pic);
-   }
- },[pic])
-  return(
-    <div className='img-container'>
-      {!loading && (
-        <img
-          src={currentSrc}
-          alt={alt}
-        />
-      )}
-      {loading && (
-        <div className="smooth-preloader">
-          <span className="loader" />
-        </div>
-      )}
+  const [imageLoaded, setImageLoaded] = useState(false);
+  return (
+    <div className="img-container">
+      <img
+        src={pic}
+        alt={alt}
+        className={`smooth-image image-${
+          imageLoaded ? 'visible' :  'hidden'
+        }`}
+        onLoad={()=> setImageLoaded(true)}
+      />
+        {!imageLoaded && (
+          <div className="smooth-preloader">
+            <span className="loader" />
+          </div>
+        )}
     </div>
   )
 }

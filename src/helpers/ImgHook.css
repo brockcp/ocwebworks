@@ -10,6 +10,22 @@
   width:100%;
   height:100%;
 }
+.smooth-image {
+  transition: opacity 1s;
+  width:100%;
+  height:Auto;
+}
+.image-visible {
+  opacity: 1;
+}
+.image-hidden {
+  opacity: 0;
+}
+.smooth-no-image {
+  background-image: linear-gradient(90deg, #ccc, #999, #ccc);
+  color: #fff;
+}
+
 @keyframes preloader-block {
   from {background-position: 0%, 0;}
   to {background-position: 170%, 0;}
@@ -23,7 +39,7 @@
   background: rgba(245, 245, 245, 0.34);
 }
 .loader {
-  background-image: linear-gradient(to right, #d1dcf0, #ffffff, #d1dcf0);
+  background-image: linear-gradient(to right, #bcf095, #ffffff, #bcf095);
   width: 100%;
   height: 100%;
   display: inline-block;
